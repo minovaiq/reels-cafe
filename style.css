@@ -173,3 +173,7 @@ header #search::placeholder{color:#95777a!important}
 /* Small confirmation after adding an item to cart */
 #cartToast{position:fixed;z-index:1000;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,15px);opacity:0;visibility:hidden;pointer-events:none;max-width:calc(100vw - 32px);padding:11px 17px;border-radius:13px;background:#8f2031;color:#fff;font-size:13px;font-weight:700;line-height:1.5;text-align:center;box-shadow:0 6px 22px #45132145;transition:opacity .2s,transform .2s,visibility .2s}
 #cartToast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+/* Larger, easier-to-tap category tabs */
+#categories{gap:8px!important;padding:9px 2px 13px!important}
+#categories button{font-size:14px!important;font-weight:800!important;padding:10px 16px!important;min-height:42px!important;border-radius:11px!important;white-space:nowrap}
