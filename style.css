@@ -177,3 +177,9 @@ header #search::placeholder{color:#95777a!important}
 /* Larger, easier-to-tap category tabs */
 #categories{gap:8px!important;padding:9px 2px 13px!important}
 #categories button{font-size:14px!important;font-weight:800!important;padding:10px 16px!important;min-height:42px!important;border-radius:11px!important;white-space:nowrap}
+
+/* Reduce gap between category tabs and product list */
+#categories{margin-bottom:0!important;padding-bottom:3px!important}
+main>h2{margin-bottom:2px!important}
+#products{margin-top:0!important;padding-top:0!important}
+#products .category:first-child{margin-top:0!important}
