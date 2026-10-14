@@ -207,3 +207,6 @@ header #cartButton b{font-size:10px!important}
 .categories-wrap{display:flex;flex-direction:column}
 .categories-wrap .categories-swipe-hint{position:static!important;order:-1;align-self:flex-start;min-width:0!important;height:auto!important;padding:0 3px!important;margin:0 0 2px!important;background:none!important;pointer-events:none}
 .categories-wrap #categories{padding-left:2px!important}
+
+/* Position swipe guidance above categories on the opposite (right) side */
+.categories-wrap .categories-swipe-hint{align-self:flex-end!important;margin:0 3px 2px 0!important}
