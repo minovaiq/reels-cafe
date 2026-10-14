@@ -12,9 +12,9 @@ $("sendOrder").onclick=async()=>{
  if(!orderKey){orderKey=sessionStorage.getItem("reels_pending_order_key")||(crypto.randomUUID?crypto.randomUUID():String(Date.now())+"-0000-4000-8000-"+Math.random().toString(16).slice(2,14).padEnd(12,"0"));sessionStorage.setItem("reels_pending_order_key",orderKey)}
  sending=true;$("sendOrder").disabled=true;$("sendOrder").textContent="جاري إرسال الطلب...";orderMsg("");
  try{
- const res=await fetch(cfg.supabaseUrl+"/rest/v1/rpc/place_reels_order",{method:"POST",headers:{...headers,"Content-Type":"application/json"},body:JSON.stringify({p_client_order_key:orderKey,p_phone:phone,p_address:address,p_area_id:Number(area.id),p_items:items,p_customer_name:$("customer").value.trim(),p_notes:$("notes").value.trim()})});
+ const res=await fetch(cfg.supabaseUrl+"/rest/v1/rpc/place_reels_order",{method:"POST",headers:{...headers,"Content-Type":"application/json"},body:JSON.stringify({p_client_order_key:orderKey,p_phone:phone,p_address:address,p_area_id:Number(area.id),p_items:items,p_customer_name:null,p_notes:$("notes").value.trim()})});
  if(!res.ok)throw Error(await res.text());
- const data=await res.json();cart.clear();orderKey=null;sessionStorage.removeItem("reels_pending_order_key");["phone","address","customer","notes"].forEach(id=>$(id).value="");$("area").value="";drawCart();$("cart").close();alert(data.already_exists?"طلبك مستلم مسبقاً ✓":"تم إرسال طلبك بنجاح ✓");
+ const data=await res.json();cart.clear();orderKey=null;sessionStorage.removeItem("reels_pending_order_key");["phone","address","notes"].forEach(id=>$(id).value="");$("area").value="";drawCart();$("cart").close();alert(data.already_exists?"طلبك مستلم مسبقاً ✓":"تم إرسال طلبك بنجاح ✓");
  }catch(e){console.error("Order submission failed",e);orderMsg("تعذر إرسال الطلب حالياً، حاول مرة ثانية — لن يتكرر الطلب.")}
  finally{sending=false;$("sendOrder").disabled=false;$("sendOrder").textContent="إرسال الطلب"}
 };
