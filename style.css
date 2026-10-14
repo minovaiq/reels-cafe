@@ -193,3 +193,12 @@ header #cartButton b{font-size:10px!important}
 .product .photo{width:100%!important;margin:0!important;padding:0!important;border-radius:0!important;overflow:hidden!important}
 .product .photo img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center!important}
 .product .details{padding:8px 9px 9px!important}
+
+/* Clear swipe affordance for horizontally scrolling category tabs */
+.categories-wrap{position:relative;min-width:0}
+.categories-wrap #categories{overflow-x:auto!important;scrollbar-width:none;scroll-behavior:smooth;padding-left:62px!important}
+.categories-wrap #categories::-webkit-scrollbar{display:none}
+.categories-swipe-hint{position:absolute;left:0;top:0;bottom:3px;display:flex;align-items:center;justify-content:center;gap:3px;padding:0 6px 0 13px;min-width:66px;pointer-events:none;color:#a32d3b;font-size:10px;font-weight:800;background:linear-gradient(to right,#fffaf4 73%,rgba(255,250,244,0));white-space:nowrap}
+.categories-swipe-hint .swipe-arrow{font-size:19px;line-height:1;animation:reels-swipe-arrow 1.6s ease-in-out infinite}
+@keyframes reels-swipe-arrow{0%,100%{transform:translateX(0)}50%{transform:translateX(-5px)}}
+@media(prefers-reduced-motion:reduce){.categories-swipe-hint .swipe-arrow{animation:none}}
