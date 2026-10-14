@@ -151,3 +151,15 @@ main>h2{font-size:14px;margin:12px 0 9px}
 #cart .checkout-totals h3{font-size:16px!important}
 #cart #sendOrder{font-size:15px!important}
 #cart #orderMsg{font-size:13px!important}
+
+/* Reels Café premium burgundy hero behind the home logo */
+header{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(145deg,#7d1525 0%,#a82032 46%,#651020 100%)!important;border-bottom:1px solid #b84b58!important;box-shadow:0 6px 20px rgba(99,18,33,.16)}
+header::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 65% at 50% 40%,rgba(255,255,255,.13),transparent 75%),radial-gradient(circle at 0 0,rgba(255,213,192,.14),transparent 40%),linear-gradient(125deg,transparent 0 43%,rgba(255,255,255,.045) 43% 46%,transparent 46% 100%)}
+header::after{content:"";position:absolute;width:240px;height:240px;top:20px;left:50%;transform:translateX(-50%);border:1px solid rgba(255,255,255,.10);border-radius:50%;z-index:-1;pointer-events:none}
+header .brand-logo{position:relative;background:#fffaf5!important;border:2px solid rgba(255,255,255,.8)!important;box-shadow:0 5px 18px rgba(56,4,15,.28)!important}
+header h1{color:#fff8f3!important;text-shadow:0 2px 6px rgba(58,6,16,.22)}
+header p{color:#ffe0df!important}
+header .top-action{background:rgba(255,255,255,.13)!important;border:1px solid rgba(255,255,255,.32)!important;color:#fff9f6!important;backdrop-filter:blur(5px)}
+header .top-action.cart-action{background:#fff7f1!important;color:#861c2b!important;border-color:#fff7f1!important}
+header #search{background:#fffaf7!important;border:1px solid rgba(255,255,255,.8)!important;color:#48232a!important;box-shadow:0 3px 10px rgba(76,8,23,.13)}
+header #search::placeholder{color:#95777a!important}
