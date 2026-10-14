@@ -21,7 +21,7 @@ $("sendOrder").onclick=async()=>{
 async function init(){try{const [cs,ps,areas]=await Promise.all([rows("menu_categories","id,name,sort_order,is_active"),rows("menu_products","id,category_id,name,price_iqd,image_url,sort_order,is_available"),rows("reels_delivery_areas","id,name,delivery_price,sort_order,is_active")]);deliveryAreas=areas.filter(a=>a.is_active);$("area").replaceChildren(new Option("اختار منطقتك",""),...deliveryAreas.map(a=>new Option(a.name+" — "+money(a.delivery_price),String(a.id))));categories=cs.filter(c=>c.is_active);const ids=new Set(categories.map(c=>c.id));products=ps.filter(p=>p.is_available&&ids.has(p.category_id));draw();drawCart()}catch(e){console.error(e);$("status").textContent="تعذر تحميل المنيو من قاعدة البيانات. تحقق من الاتصال ثم أعد تحميل الصفحة."}}init();
 let deferredInstallPrompt=null;
 const installedDisplay=window.matchMedia("(display-mode: standalone)");
-function syncInstallButton(){const installed=installedDisplay.matches||navigator.standalone===true;$("installButton").hidden=installed;$("installButton").style.display=installed?"none":"";return installed}
+function syncInstallButton(){const installed=installedDisplay.matches||navigator.standalone===true;$("installButton").hidden=installed;$("installButton").style.display="";return installed}
 syncInstallButton();
 if(installedDisplay.addEventListener)installedDisplay.addEventListener("change",syncInstallButton);
 else if(installedDisplay.addListener)installedDisplay.addListener(syncInstallButton);
