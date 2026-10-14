@@ -65,3 +65,6 @@ dialog small,#installHelp p{color:#806d63}
 
 /* Prevent iOS Safari zoom when focusing the menu search */
 #search{font-size:16px!important}
+
+/* Avoid automatic focus zoom on iOS for every editable field */
+input,textarea,select,[contenteditable="true"]{font-size:16px!important}
