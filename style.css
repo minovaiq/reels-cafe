@@ -187,3 +187,9 @@ main>h2{margin-bottom:2px!important}
 /* Improve cart button label readability */
 header #cartButton{font-size:12px!important;font-weight:800!important;line-height:1.4!important}
 header #cartButton b{font-size:10px!important}
+
+/* Product photo flush with the card's top, left and right edges */
+.product{padding:0!important;overflow:hidden!important}
+.product .photo{width:100%!important;margin:0!important;padding:0!important;border-radius:0!important;overflow:hidden!important}
+.product .photo img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center!important}
+.product .details{padding:8px 9px 9px!important}
