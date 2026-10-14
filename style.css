@@ -33,3 +33,32 @@ dialog h2{font-size:17px}dialog input,dialog textarea{font-size:12px;padding:9px
 #copy{padding:10px;font-size:12px;background:var(--reels-gold)}
 @media(min-width:700px){header{padding:15px 25px 20px}main{padding:14px 18px 30px}.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.photo{height:140px}.details h3{font-size:12px;min-height:37px}.category{padding:12px}.brand-logo{width:75px;height:90px}}
 @media(max-width:360px){.photo{height:75px}.details{padding:6px}.details h3{font-size:10px}.top-action{font-size:9px}}
+
+/* Reels Café warm milk + red visual identity */
+:root{--reels-bg:#f7f2e9;--reels-panel:#fffaf3;--reels-card:#fffdf9;--reels-gold:#b73535;--reels-gold-soft:#872c2d;--reels-line:#e8d8cc;--reels-muted:#88786f}
+html,body{background:#f7f2e9;color:#3c302b}
+header{background:radial-gradient(ellipse at 50% 0%,#fffdf9 0%,#f7f0e6 72%);border-bottom:1px solid #eadbd0}
+.top-action{background:#fffaf5;color:#872c2d!important;border:1px solid #ead9cf;box-shadow:0 2px 8px #7a49350b}
+.top-action.cart-action{background:#ad3336;border-color:#ad3336;color:#fffaf5!important}
+.top-action.cart-action b{background:#fff8f2;color:#a52d31}
+.brand-logo{background:#fffdf9;border:1px solid #e9d7cc;box-shadow:0 4px 14px #6b382016}
+header h1,main>h2,.category h2{color:#922e32}
+header p{color:#927d70}
+#search{background:#fffdfa;border-color:#e7d5c9;color:#43352e;box-shadow:0 2px 9px #5e34200a}
+#search::placeholder{color:#a49387}
+#categories button{background:#fffaf4;color:#6a5046;border:1px solid #e7d8cb}
+#categories button.active{background:#b33437;color:#fff;border-color:#b33437}
+.category{background:#fffaf4;border-color:#e8d9cc;box-shadow:0 3px 13px #74452c0a}
+.product{background:#fffdf9;border-color:#eee0d5;box-shadow:0 2px 9px #6b382010}
+.photo{background:linear-gradient(140deg,#f6e9db,#fdf8f1);color:#b73a3c}
+.details h3{color:#49352e}
+.price{color:#a52f34}
+.add{background:#b33437;color:#fff;box-shadow:0 2px 7px #b3343726}
+#status{color:#8b6e62}
+dialog{background:#fffaf5;color:#3d2e29;border-color:#ead8c8;box-shadow:0 16px 60px #2a16153d}
+.dialog-head button{color:#9e3135}
+.cart-line{border-color:#ebddd2}
+.cart-line button{background:#f7e7e3;color:#9b3033}
+dialog input,dialog textarea{background:#fff;color:#3e312b;border-color:#e5d4c8}
+#copy{background:#b33437;color:#fff}
+dialog small,#installHelp p{color:#806d63}
