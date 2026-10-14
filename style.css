@@ -104,3 +104,6 @@ main>h2{font-size:14px;margin:12px 0 9px}
 #sendOrder{width:100%;background:#ad3336;color:white;border:0;border-radius:12px;padding:12px;font:700 14px Cairo,sans-serif;cursor:pointer}
 #sendOrder:disabled{opacity:.55;cursor:wait}
 #orderMsg{color:#ad3336;font-size:12px;min-height:15px}
+
+/* Ensure empty cart never displays checkout fields */
+#checkoutFields[hidden]{display:none!important}
