@@ -107,3 +107,6 @@ main>h2{font-size:14px;margin:12px 0 9px}
 
 /* Ensure empty cart never displays checkout fields */
 #checkoutFields[hidden]{display:none!important}
+
+/* Installed PWA: hidden must override top-action display declarations */
+#installButton[hidden]{display:none!important}
