@@ -163,3 +163,9 @@ header .top-action{background:rgba(255,255,255,.13)!important;border:1px solid r
 header .top-action.cart-action{background:#fff7f1!important;color:#861c2b!important;border-color:#fff7f1!important}
 header #search{background:#fffaf7!important;border:1px solid rgba(255,255,255,.8)!important;color:#48232a!important;box-shadow:0 3px 10px rgba(76,8,23,.13)}
 header #search::placeholder{color:#95777a!important}
+
+/* Readable product titles and prices with tighter vertical rhythm */
+.product .details h3{font-size:14px!important;line-height:1.45!important;min-height:0!important;height:auto!important;margin:0 0 4px!important;font-weight:800!important}
+.product .details .bottom-row{margin-top:0!important;gap:5px!important;align-items:center!important}
+.product .details .price{font-size:14px!important;line-height:1.4!important;font-weight:800!important}
+.product .details{padding-top:7px!important}
