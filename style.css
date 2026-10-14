@@ -185,5 +185,5 @@ main>h2{margin-bottom:2px!important}
 #products .category:first-child{margin-top:0!important}
 
 /* Improve cart button label readability */
-header #cartButton{font-size:14px!important;font-weight:800!important;line-height:1.4!important}
-header #cartButton b{font-size:12px!important}
+header #cartButton{font-size:12px!important;font-weight:800!important;line-height:1.4!important}
+header #cartButton b{font-size:10px!important}
