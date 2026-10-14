@@ -123,3 +123,21 @@ main>h2{font-size:14px;margin:12px 0 9px}
 .top>#installButton{grid-column:2!important}
 .top>a.top-action{grid-column:3!important}
 .top>#installButton[hidden]{display:flex!important;visibility:hidden!important;pointer-events:none!important}
+
+/* Compact cart modal and checkout spacing */
+#cart{padding:12px 13px!important;border-radius:14px!important;max-height:88dvh!important}
+#cart .dialog-head{margin:0 0 4px!important;min-height:28px}
+#cart .dialog-head h2{font-size:15px!important;margin:0!important}
+#cart .dialog-head button{font-size:23px!important;line-height:1;padding:0 3px}
+#cart #items{margin:0!important;padding:0!important}
+#cart .cart-line{padding:5px 0!important;gap:7px!important;font-size:11px!important;align-items:center;line-height:1.45}
+#cart .cart-line button{padding:4px 7px!important;font-size:10px!important;white-space:nowrap}
+#cart .checkout-field{gap:2px!important;margin:5px 0!important}
+#cart .checkout-field label{font-size:11px!important;line-height:1.3}
+#cart .checkout-field input,#cart .checkout-field select{min-height:35px!important;padding:6px 9px!important;margin:0!important;border-radius:8px!important}
+#cart .checkout-field textarea{min-height:44px!important;padding:6px 9px!important;margin:0!important;border-radius:8px!important}
+#cart .checkout-totals{margin-top:7px!important;padding-top:5px!important}
+#cart .checkout-totals p{margin:3px 0!important;font-size:11px!important}
+#cart .checkout-totals h3{margin:5px 0 7px!important;font-size:13px!important}
+#cart #sendOrder{padding:8px!important;min-height:36px!important;border-radius:9px!important}
+#cart #orderMsg{margin:3px 0 0!important;min-height:0!important;line-height:1.4}
