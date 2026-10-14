@@ -169,3 +169,7 @@ header #search::placeholder{color:#95777a!important}
 .product .details .bottom-row{margin-top:0!important;gap:5px!important;align-items:center!important}
 .product .details .price{font-size:14px!important;line-height:1.4!important;font-weight:800!important}
 .product .details{padding-top:7px!important}
+
+/* Small confirmation after adding an item to cart */
+#cartToast{position:fixed;z-index:1000;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,15px);opacity:0;visibility:hidden;pointer-events:none;max-width:calc(100vw - 32px);padding:11px 17px;border-radius:13px;background:#8f2031;color:#fff;font-size:13px;font-weight:700;line-height:1.5;text-align:center;box-shadow:0 6px 22px #45132145;transition:opacity .2s,transform .2s,visibility .2s}
+#cartToast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
