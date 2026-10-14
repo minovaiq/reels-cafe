@@ -115,3 +115,11 @@ main>h2{font-size:14px;margin:12px 0 9px}
 .top{display:flex!important;justify-content:flex-start!important;align-items:center;gap:5px}
 .top>.top-action{flex:0 0 calc((100% - 10px)/3);width:calc((100% - 10px)/3);max-width:calc((100% - 10px)/3)}
 #installButton[hidden]{display:none!important}
+
+/* Fixed three-slot header: keep the middle slot reserved when install is hidden */
+.top{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:5px!important;justify-content:initial!important}
+.top>.top-action{width:100%!important;max-width:none!important;min-width:0;flex:initial!important}
+.top>#cartButton{grid-column:1!important}
+.top>#installButton{grid-column:2!important}
+.top>a.top-action{grid-column:3!important}
+.top>#installButton[hidden]{display:flex!important;visibility:hidden!important;pointer-events:none!important}
