@@ -110,3 +110,8 @@ main>h2{font-size:14px;margin:12px 0 9px}
 
 /* Installed PWA: hidden must override top-action display declarations */
 #installButton[hidden]{display:none!important}
+
+/* Keep top action positions fixed: hidden install leaves no replacement or stretch */
+.top{display:flex!important;justify-content:flex-start!important;align-items:center;gap:5px}
+.top>.top-action{flex:0 0 calc((100% - 10px)/3);width:calc((100% - 10px)/3);max-width:calc((100% - 10px)/3)}
+#installButton[hidden]{display:none!important}
