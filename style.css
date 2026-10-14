@@ -62,3 +62,6 @@ dialog{background:#fffaf5;color:#3d2e29;border-color:#ead8c8;box-shadow:0 16px 6
 dialog input,dialog textarea{background:#fff;color:#3e312b;border-color:#e5d4c8}
 #copy{background:#b33437;color:#fff}
 dialog small,#installHelp p{color:#806d63}
+
+/* Prevent iOS Safari zoom when focusing the menu search */
+#search{font-size:16px!important}
