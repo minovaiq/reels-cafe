@@ -202,3 +202,8 @@ header #cartButton b{font-size:10px!important}
 .categories-swipe-hint .swipe-arrow{font-size:19px;line-height:1;animation:reels-swipe-arrow 1.6s ease-in-out infinite}
 @keyframes reels-swipe-arrow{0%,100%{transform:translateX(0)}50%{transform:translateX(-5px)}}
 @media(prefers-reduced-motion:reduce){.categories-swipe-hint .swipe-arrow{animation:none}}
+
+/* Place the swipe hint ABOVE category buttons, never overlaying them */
+.categories-wrap{display:flex;flex-direction:column}
+.categories-wrap .categories-swipe-hint{position:static!important;order:-1;align-self:flex-start;min-width:0!important;height:auto!important;padding:0 3px!important;margin:0 0 2px!important;background:none!important;pointer-events:none}
+.categories-wrap #categories{padding-left:2px!important}
