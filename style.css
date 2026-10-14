@@ -183,3 +183,7 @@ header #search::placeholder{color:#95777a!important}
 main>h2{margin-bottom:2px!important}
 #products{margin-top:0!important;padding-top:0!important}
 #products .category:first-child{margin-top:0!important}
+
+/* Improve cart button label readability */
+header #cartButton{font-size:14px!important;font-weight:800!important;line-height:1.4!important}
+header #cartButton b{font-size:12px!important}
