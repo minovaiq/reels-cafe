@@ -1,0 +1,1 @@
+window.ReelsPages=window.ReelsPages||{};window.ReelsPages.products={init(){const form=document.getElementById('productForm');if(form)form.setAttribute('autocomplete','off')}};
