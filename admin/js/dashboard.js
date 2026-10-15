@@ -1,0 +1,1 @@
+window.ReelsPages=window.ReelsPages||{};window.ReelsPages.dashboard={init(){const el=document.getElementById('recentOrders');if(el)el.setAttribute('aria-live','polite')}};
