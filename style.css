@@ -213,3 +213,9 @@ header #cartButton b{font-size:10px!important}
 
 /* Hide checkout contact fields for pickup, overriding flex layout */
 #cart .checkout-field[hidden]{display:none!important}
+
+/* Opening hours: visible menu status and disabled product add buttons */
+.cafe-open-banner{margin:6px 2px 12px;padding:11px 13px;text-align:center;border:1px solid #d7a5a3;background:#fff0ee;color:#a72e34;border-radius:12px;font-size:13px;font-weight:800}
+.cafe-open-banner[hidden]{display:none!important}
+.cafe-checking .cafe-open-banner{background:#fffaf0;border-color:#ead8ba;color:#775e43}
+.cafe-closed button.add,.cafe-checking button.add,button.add:disabled{opacity:.35!important;cursor:not-allowed!important;filter:grayscale(.55);box-shadow:none!important;pointer-events:none}
