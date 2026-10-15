@@ -210,3 +210,6 @@ header #cartButton b{font-size:10px!important}
 
 /* Position swipe guidance above categories on the opposite (right) side */
 .categories-wrap .categories-swipe-hint{align-self:flex-end!important;margin:0 3px 2px 0!important}
+
+/* Hide checkout contact fields for pickup, overriding flex layout */
+#cart .checkout-field[hidden]{display:none!important}
