@@ -1,0 +1,1 @@
+window.ReelsPages=window.ReelsPages||{};window.ReelsPages.categories={init(){const form=document.getElementById('categoryForm');if(form)form.setAttribute('autocomplete','off')}};
