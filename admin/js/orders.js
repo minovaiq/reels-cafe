@@ -1,0 +1,1 @@
+window.ReelsPages=window.ReelsPages||{};window.ReelsPages.orders={init(){const s=document.getElementById('orderFilter');if(s)s.setAttribute('aria-label','تصفية الطلبات حسب الحالة')}};
